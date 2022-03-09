@@ -1,0 +1,64 @@
+<!--Tratamento de dados-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis</title>
+    <style>
+        body
+        {
+            background-color: lightgray;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        h1
+        {
+            font-size: 3em;
+            text-align: center;
+            background-color: white;
+            border-radius: 20px;
+
+            margin: 40px;
+        }
+
+        p
+        {
+            font-size: 1.5em;
+            text-align: center;
+            border-radius: 20px;
+
+            margin: auto;
+            max-width: 600px;
+            transition: .6s;
+        }
+
+        p:hover
+        {
+            background-color: white;
+            border-radius: 20px;
+
+
+            transition: .6s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá!</h1>
+
+    <script>
+        var nome = window.prompt('Qual eh o seu nome?') //INTERAGIR COM O USUARIO
+
+        window.alert('Eh um grande prazer em te conhecer, ' + nome + '!') // CONCATENACAO
+
+        var n1 = Number(window.prompt('Digite um numero:'))
+        var n2 = Number(window.prompt('Digite outro numero:'))
+        var s = n1 + n2;
+
+        window.alert(`A soma entre ${n1} e ${n2} eh igual a ${s} `)
+    </script>
+
+</body>
+</html>

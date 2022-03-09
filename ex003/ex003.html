@@ -1,0 +1,48 @@
+<!--Tratamento de dados-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome</title>
+    <style>
+        body
+        {
+            background-color: lightgray;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+            font-size: 1.5em;
+            text-align: center;
+
+            margin: auto;
+        }
+
+        h1
+        {
+            font-size: 2em;
+            text-align: center;
+            background-color: white;
+            border-radius: 20px;
+
+            margin: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá!</h1>
+
+    <script>
+        var nome = window.prompt('Qual eh o seu nome?')
+        document.write(`Seu nome tem ${nome.length} letras. <br>`)
+        document.write(`Seu nome maiusculo eh ${nome.toUpperCase()} <br>`)
+        document.write(`Seu nome minusculo eh ${nome.toLowerCase()} <br>`)
+
+        var sal = window.prompt('Qual o seu salario?')
+        parseFloat(document.write(`Seu salario eh de R$ ${sal}`))
+        
+    </script>
+
+</body>
+</html>
