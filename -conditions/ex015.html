@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo</title>
+    <style>
+        body
+        {
+            font-family: fantasy;
+            margin: 40vh;
+            background-color: rgb(156, 156, 156);
+        }
+
+        h1
+        {
+            font-size: 4em;
+            text-align: center;
+            letter-spacing: 3px;
+        }
+
+        p
+        {
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        var agora = new Date()
+        var diaSem = agora.getDay()
+
+        switch(diaSem)
+        {
+            case 0:
+                document.write('<h1>HOJE EH DOMINGO!</h1>')
+                break
+            case 1:
+                document.write('<h1>HOJE EH SEGUNDA!</h1>')
+                break
+            case 2:
+                document.write('<h1>HOJE EH TERCA!</h1>')
+                break
+            case 3:
+                document.write('<h1>HOJE EH QUARTA!</h1>')
+                break
+            case 4:
+                document.write('<h1>HOJE EH QUINTA!</h1>')
+                break
+            case 5:
+                document.write('<h1>HOJE EH SEXTA!</h1>')
+                break
+            case 6:
+                document.write('<h1>HOJE EH SABADO!</h1>')
+                break
+            default:
+                document.write('<h1>Esse dia nao existe!</h1>')
+        }
+
+        var agora = new Date()
+        var hora = agora.getHours()
+
+        if (hora > 5 && hora <= 12)
+        {
+            document.write('<p>Bom dia!</p>')
+        }
+
+        else if (hora > 12 && hora < 18)
+        {
+            document.write('<p>Boa tarde!</p>')
+        }
+
+        else if (hora > 0 && hora < 5)
+        {
+            document.write('<p>Boa madrugada!</p>')
+        }
+
+        else if (hora >= 18 && hora <= 23)
+        {
+            document.write('<p>Boa noite!</p>')
+        }
+
+        else
+        {
+            document.write('<p>Essa hora nao existe!</p>')
+        }
+    </script>
+
+</body>
+</html>

@@ -1,11 +1,13 @@
-condition ? expr1 : expr2
+switch (expressao)
+{
+    case i:
+        // FACA ISSO
+        break
 
-getElementById()
+    case j:
+        // FACA AQUILO
+        break
 
-getElementsByName()
-
-getElementsByClassName()
-
-querySelector()
-querySelectorAll()
-
+    default:
+        // FACA AQUILO OUTRO
+}
