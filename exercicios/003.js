@@ -7,7 +7,7 @@ function maior(n)
 {
    for (var i = 0; i < n.length; i++)
    {
-       if(n[i] > mai)
+       if (n[i] > mai)
        {
            mai = n[i]
        }

@@ -2,15 +2,17 @@
 
 body
 {
-    background-color: lightgreen;
+    background-color: rgb(78, 80, 78);
     font: normal 1em Arial;
 }
 
-header
+h1
 {
     color: white;
     text-align: center;
     text-shadow: 5px 6px 6px black;
+
+    font-size: 3em;
 }
 
 section
@@ -21,6 +23,16 @@ section
     width: 650px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.171);
+}
+
+div
+{
+    font-size: 1.5em;
+}
+
+select
+{
+    width: 100px;
 }
 
 footer

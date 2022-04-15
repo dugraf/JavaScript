@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+    <link rel="stylesheet" href="001, 002style.css">
+    <style>
+        div#res
+        {
+            font-size: 1.5em;
+            background-color: rgb(46, 49, 51);
+            margin: 30px 0px;
+            padding: 0px;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Passos...</h1>
+    </header>
+    <section>
+        <div>
+            <p>Uma pessoa deseja andar uma certa distancia, informe a distancia <strong>inicial</strong>, <strong>final</strong> e qual o valor do <strong>passo</strong> dessa pessoa.</p>
+
+            Inicial:
+            <input type="number" name="inicial" id="inicial"> <br>
+            Final:
+            <input type="number" name="final" id="final"> <br>
+            Distancia do passo:
+            <input type="number" name="passo" id="passo"> <br>
+
+            <input type="button" value="CALCULAR DISTANCIA" onclick="atravessaRua()">
+        </div>
+
+        <div id="res">
+            
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Eduardo Rodrigues Graf</p>
+    </footer>
+    
+    <script src="008script.js"></script>
+</body>
+</html>
