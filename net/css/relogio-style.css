@@ -26,7 +26,7 @@ body
     color: white;
 }
 
-#tempo.circle
+#tempo .circle
 {
     position: relative;
     width: 150px;
@@ -36,14 +36,16 @@ body
     align-items: center;
 }
 
-#tempo.circle svg
+#tempo .circle svg
 {
     position: relative;
     width: 150px;
     height: 150px;
+    transform: rotate(270deg);
+
 }
 
-#tempo.circle svg circle
+#tempo .circle svg circle
 {
     width: 100%;
     height: 100%;
@@ -53,16 +55,55 @@ body
     transform: translate(5px, 5px);
 }
 
+#tempo .circle svg circle:nth-child(2)
+{
+    stroke: var(--clr);
+    stroke-dasharray: 440;
+}
+
 #tempo div
 {
+    position: absolute ;
     text-align: center;
     font-weight: 500px;
     font-size: 1.5em;
 }
 
-#tempo.ap
+#tempo div span
+{
+    position: absolute;
+    transform: translateX(-50%) translateY(-10px);
+    font-size: 0.35em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+#tempo .ap
 {
     position: relative;
     font-size: 1em;
     transform: translateX(-20px);
+}
+
+.dots
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+
+.dots::before
+{
+    content: '';
+    position: absolute;
+    top: -3px;
+    width: 15px;
+    height: 15px;
+    background-color: var(--clr);
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px var(--clr), 0px 0px 60px var(--clr);
 }
